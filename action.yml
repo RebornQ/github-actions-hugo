@@ -1,0 +1,31 @@
+name: 'Hugo GitHub Action'
+description: 'A GitHub action used to automatic generate and deploy hugo-based blog.'
+author: 'Reborn'
+branding:
+  icon: upload-cloud
+  color: green
+inputs:
+  repo_url:
+    description: 'The repo full url of your GitHub Page repository'
+    required: true
+  deploykey:
+    description: 'The develop key of your GitHub Page repository'
+    required: true
+  username:
+    description: 'Your user name'
+    required: true
+  email:
+    description: 'Your email address'
+    required: true
+  github_token:
+    description: 'Token for the repo. Can be passed in using $\{{ secrets.GITHUB_TOKEN }}'
+    required: false
+    default: ''
+  branch:
+    description: 'The branch of the blog source code'
+    required: false
+    default: 'master'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
