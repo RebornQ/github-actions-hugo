@@ -1,4 +1,4 @@
-name: 'Hugo GitHub Action'
+name: 'Hugo Deploy GitHub Action'
 description: 'A GitHub action used to automatic generate and deploy hugo-based blog.'
 author: 'Reborn'
 branding:
