@@ -14,7 +14,9 @@ git config --global user.email "${INPUT_EMAIL}"
 
 hugo version
 
-git submodule sync
+git submodule init
+#git submodule sync
+git submodule update
 
 printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 
